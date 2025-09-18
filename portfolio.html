@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfólio - Jean Moura Lima</title>
+  <meta name="description" content="Projetos desenvolvidos por Jean Moura Lima.">
+  <meta name="keywords" content="Portfólio, Projetos, Desenvolvimento, PHP, Python, IA, Jean Lima">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <style>
+    .portfolio-item {
+      margin-bottom: 30px;
+    }
+    .portfolio-card {
+      border: 1px solid #e9e9e9;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .portfolio-card:hover {
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    }
+    .portfolio-content {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .portfolio-content h4 {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .portfolio-content ul {
+      padding-left: 20px;
+      font-size: 0.9rem;
+      flex-grow: 1;
+    }
+    .tech-badge {
+      font-size: 0.8em;
+      font-weight: 500;
+      margin: 2px;
+    }
+  </style>
+
+</head>
+
+<body class="portfolio-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Jean Moura Lima</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="resume.html">Currículo</a></li>
+          <li><a href="portfolio.html" class="active">Portfólio</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://github.com/jeancastrolima" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/jean-lima-59947a31b/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfólio</h2>
+        <p>Explore alguns dos projetos que desenvolvi, demonstrando minhas habilidades em diferentes áreas da tecnologia.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Todos</li>
+            <li data-filter=".filter-web">Aplicações Web</li>
+            <li data-filter=".filter-backend-ia">Backend & IA</li>
+            <li data-filter=".filter-infra">Infraestrutura</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/cursos.png" class="img-fluid" alt="Sistema de Cursos Online">
+                <div class="portfolio-content">
+                  <h4>Sistema de Cursos Online</h4>
+                  <p>Plataforma EAD com gestão de cursos, alunos e integração de pagamentos.</p>
+                  <ul>
+                    <li><strong>Integração de Pagamentos:</strong> API Stripe para transações seguras.</li>
+                    <li><strong>Módulo Corporativo:</strong> Geração de termos de aceite customizáveis.</li>
+                    <li><strong>Aulas Online:</strong> Integração com a plataforma BigBlueButton.</li>
+                  </ul>
+                  <div class="mt-auto"> 
+                    <div>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">PHP 8.3</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">MySQL</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">Stripe API</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">Bootstrap</span>
+                    </div>
+                    <div class="text-center mt-3">
+                      <a href="portfolio-details-plataforma-ead.html" class="btn-get-started">Ver Mais</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend-ia">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/alexexpert.png" class="img-fluid" alt="Automação Inteligente de Laudos">
+                <div class="portfolio-content">
+                  <h4>Automação Inteligente de Laudos com IA</h4>
+                  <p>Sistema especialista que automatiza laudos técnicos usando IA para diagnósticos precisos.</p>
+                  <ul>
+                    <li><strong>Motor de IA:</strong> Desenvolvido em Python com base de conhecimento em MySQL.</li>
+                    <li><strong>ETL e Integração:</strong> Sincronização de dados entre SQL Server e MySQL.</li>
+                    <li><strong>Análise de Dados:</strong> Uso de Pandas e NumPy para tratamento e cálculos.</li>
+                  </ul>
+                  <div class="mt-auto">
+                    <div>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">Python</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">IA</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">Pandas</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">SQL Server</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">MySQL</span>
+                    </div>
+                    <div class="text-center mt-3">
+                      <a href="portfolio-details-laudos-ia.html" class="btn-get-started">Ver Mais</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend-ia">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/360.png" class="img-fluid" alt="Relatórios Automáticos em PDF">
+                <div class="portfolio-content">
+                  <h4>Relatórios Automáticos em PDF</h4>
+                  <p>Sistema para geração de relatórios de clima organizacional em PDF, com gráficos e tabelas.</p>
+                  <ul>
+                    <li>Layout customizado utilizando a biblioteca Dompdf.</li>
+                    <li>Geração dinâmica de gráficos com Chart.js.</li>
+                    <li>Funcionalidade de exportação por setor.</li>
+                  </ul>
+                  <div class="mt-auto">
+                    <div>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">PHP</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">Dompdf</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">Chart.js</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">MySQL</span>
+                    </div>
+                    <div class="text-center mt-3">
+                      <a href="portfolio-details-relatorios-pdf.html" class="btn-get-started">Ver Mais</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-infra">
+              <div class="portfolio-card">
+                <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2022/04/best-email-provider.png" class="img-fluid" alt="Servidor de E-mail Corporativo">
+                <div class="portfolio-content">
+                  <h4>Servidor de E-mail Corporativo</h4>
+                  <p>Configuração de servidor de e-mail completo, garantindo alta entregabilidade e segurança.</p>
+                  <ul>
+                    <li>Instalação e configuração do iRedMail em VPS Linux.</li>
+                    <li>Implementação de SPF, DKIM e DMARC para autenticação.</li>
+                    <li>Migração de contas de e-mail existentes via IMAP.</li>
+                  </ul>
+                  <div class="mt-auto">
+                    <div>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">Linux</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">iRedMail</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">DNS</span>
+                      <span class="badge rounded-pill text-bg-secondary tech-badge">IMAP/SMTP</span>
+                    </div>
+                     <div class="text-center mt-3">
+                      <a href="portfolio-details-servidor-email.html" class="btn-get-started">Ver Mais</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© Copyright <strong><span class="px-1 sitename">Jean Moura Lima</span></strong>. Todos os Direitos Reservados</p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/jeancastrolima" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/jean-lima-59947a31b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

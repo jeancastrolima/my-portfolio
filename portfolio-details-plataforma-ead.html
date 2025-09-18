@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Detalhes do Projeto - Sistema de Cursos Online</title>
+  <meta name="description" content="Detalhes do projeto de plataforma EAD desenvolvido por Jean Moura Lima.">
+  <meta name="keywords" content="Portfólio, EAD, PHP, Stripe, MySQL, Jean Lima">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Jean Moura Lima</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="resume.html">Currículo</a></li>
+          <li><a href="portfolio.html" class="active">Portfólio</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://github.com/jeancastrolima" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/jean-lima-59947a31b/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Detalhes do Projeto</h2>
+        <p>Sistema de Cursos Online - Plataforma EAD Completa</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <div class="portfolio-details-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper align-items-center">
+                
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/cursos.png" alt="Tela inicial do sistema de cursos">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/paineldoaluno.png" alt="Painel do aluno">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/paineladmin.png" alt="Dashboard administrativo">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="portfolio-info bg-light p-4 rounded my-4" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="text-center">Informações do Projeto</h3>
+              <ul>
+                <li><strong>Categoria</strong>: Aplicação Web EAD</li>
+                <li><strong>Cliente</strong>: UNAX Group</li>
+                <li><strong>Data do Projeto</strong>: 2025</li>
+                <li><strong>Tecnologias</strong>: PHP, MySQL, JavaScript, Bootstrap, Stripe API, BigBlueButton</li>
+              </ul>
+            </div>
+
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2 class="text-center">Descrição Detalhada</h2>
+              <p>
+                O Sistema de Cursos Online é uma plataforma EAD completa e robusta, projetada para oferecer uma experiência de aprendizado integrada para alunos e uma gestão centralizada para administradores.
+              </p>
+              <h4 class="text-center">Arquitetura em Três Portais</h4>
+              <p>A aplicação é dividida em três ambientes distintos e interconectados:</p>
+              <ol>
+                <li><strong>Portal Público (siteacademy):</strong> A vitrine do sistema, onde visitantes podem explorar cursos, planos, ler o blog e se matricular.</li>
+                <li><strong>Painel Administrativo (manageracademy):</strong> O cérebro da operação, permitindo a gestão completa de cursos, alunos, matrículas, provas, relatórios e aulas ao vivo.</li>
+                <li><strong>Painel do Aluno (manageracademyaluno):</strong> A área de aprendizado dedicada, onde alunos acessam seus cursos, acompanham o progresso, realizam provas, emitem certificados e gerenciam suas assinaturas.</li>
+              </ol>
+            </div>
+
+            <div class="portfolio-description mt-4" data-aos="fade-up" data-aos-delay="400">
+                <h4 class="text-center">Principais Funcionalidades Implementadas</h4>
+                <ul>
+                    <li><strong>Gestão de Conteúdo:</strong> Ferramentas completas para criar e organizar cursos, módulos e submódulos (<code>criar_modulo.php</code>, <code>editar_curso.php</code>).</li>
+                    <li><strong>Sistema de Avaliação:</strong> Banco de questões (<code>banco-de-questoes.php</code>), aplicação de provas online (<code>conteudo_da_prova.php</code>) e processamento de respostas (<code>processa_respostas.php</code>).</li>
+                    <li><strong>Acompanhamento de Progresso:</strong> Dashboards para administradores e alunos visualizarem o andamento nos cursos (<code>progresso_aluno.php</code>).</li>
+                    <li><strong>Integração de Pagamentos:</strong> Processamento de matrículas e assinaturas de forma segura com a API do Stripe (<code>webhook_stripe.php</code>, <code>create-checkout-session.php</code>).</li>
+                    <li><strong>Termos e Assinaturas:</strong> Geração de termos de aceite para funcionários e coleta de assinaturas digitais (<code>assinar.php</code>, <code>salvar_assinatura.php</code>).</li>
+                    <li><strong>Certificação:</strong> Emissão automática de certificados para alunos que concluem os cursos (<code>certificados.php</code>).</li>
+                    <li><strong>Aulas ao Vivo:</strong> Módulo de gestão e participação em aulas online síncronas (<code>gestao_aulas.php</code>).</li>
+                    <li><strong>Interação:</strong> Ferramentas de comunicação como chat e fórum para engajamento dos alunos.</li>
+                </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section></main>
+
+    <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© Copyright <strong><span class="px-1 sitename">Jean Moura Lima</span></strong>. Todos os Direitos Reservados</p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/jeancastrolima" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/jean-lima-59947a31b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

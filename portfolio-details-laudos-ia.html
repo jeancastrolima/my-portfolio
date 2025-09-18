@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Detalhes do Projeto - Laudos com IA</title>
+  <meta name="description" content="Detalhes do projeto de Automação Inteligente de Laudos com IA desenvolvido por Jean Moura Lima.">
+  <meta name="keywords" content="Portfólio, IA, Python, Gemini, Streamlit, ETL, Jean Lima">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Jean Moura Lima</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="resume.html">Currículo</a></li>
+          <li><a href="portfolio.html" class="active">Portfólio</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://github.com/jeancastrolima" target="_blank" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/jean-lima-59947a31b/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Detalhes do Projeto</h2>
+        <p>Automação Inteligente de Laudos com IA</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <div class="portfolio-details-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper align-items-center">
+                
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/alexexpert.png" alt="Dashboard da aplicação de laudos">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/laudo-exemplo.png" alt="Exemplo de laudo gerado pela IA">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/etl-processo.png" alt="Processo de sincronização de dados">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="portfolio-info bg-light p-4 rounded my-4" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="text-center">Informações do Projeto</h3>
+              <ul>
+                <li><strong>Categoria</strong>: Sistema Especialista / Aplicação de Dados com IA</li>
+                <li><strong>Cliente</strong>: UNAX Group</li>
+                <li><strong>Data do Projeto</strong>: 2025</li>
+                <li><strong>Tecnologias</strong>: Python, Streamlit, Gemini API, Pandas, NumPy, SQL Server, MySQL</li>
+              </ul>
+            </div>
+
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2 class="text-center">Descrição Detalhada</h2>
+              <p>
+                Este sistema especialista resolve o desafio de gerar laudos técnicos complexos para análise de fluidos em plataformas offshore, substituindo um processo manual e demorado por uma solução automatizada, inteligente e precisa.
+              </p>
+              <h4 class="text-center">Arquitetura e Fluxo de Trabalho</h4>
+              <ol>
+                <li><strong>Sincronização de Dados (ETL):</strong> Um script dedicado (<code>sync.py</code>) conecta-se a um banco de dados SQL Server externo, extrai os dados brutos das análises e os carrega em um banco de dados MySQL local, que serve como fonte principal para a aplicação.</li>
+                <li><strong>Processamento e Análise:</strong> O núcleo do sistema (<code>backend.py</code>) utiliza as bibliotecas Pandas e NumPy para limpar, processar e realizar cálculos técnicos sobre os dados sincronizados.</li>
+                <li><strong>Motor de IA com Gemini:</strong> O diferencial do projeto é a integração com a <strong>API do Gemini</strong>. Os dados processados são enviados à IA, que, com base em seu vasto conhecimento e no contexto fornecido (potencialmente a partir de uma base de conhecimento em MySQL), gera um diagnóstico técnico detalhado, com a nuance e a qualidade de um especialista humano.</li>
+                <li><strong>Interface Web Interativa:</strong> Uma aplicação web construída com Streamlit (<code>app.py</code>) serve como a interface principal, permitindo que os usuários iniciem análises, visualizem os laudos gerados pela IA e gerenciem o sistema.</li>
+              </ol>
+            </div>
+
+            <div class="portfolio-description mt-4" data-aos="fade-up" data-aos-delay="400">
+                <h4 class="text-center">Principais Funcionalidades Implementadas</h4>
+                <ul>
+                    <li><strong>ETL Automatizado:</strong> Processo robusto para sincronização de dados entre diferentes sistemas de banco de dados.</li>
+                    <li><strong>Geração de Diagnóstico por IA:</strong> Laudos e recomendações criados dinamicamente pela API do Gemini, garantindo alta qualidade e consistência.</li>
+                    <li><strong>Análise e Processamento de Dados:</strong> Limpeza e manipulação de grandes volumes de dados técnicos com Pandas.</li>
+                    <li><strong>Dashboard Interativo:</strong> Interface amigável com Streamlit para visualização de resultados e interação com o sistema.</li>
+                    <li><strong>Gestão de Usuários:</strong> Script dedicado para o gerenciamento de acesso à plataforma (<code>add_user.py</code>).</li>
+                </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section></main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© Copyright <strong><span class="px-1 sitename">Jean Moura Lima</span></strong>. Todos os Direitos Reservados</p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/jeancastrolima" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/jean-lima-59947a31b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
